@@ -27,7 +27,7 @@ fetch('https://randomuser.me/api')      // ...1st Promise obj resolves to Respon
             const htmlData = `
             <img  class="user" src=${userData.results[0].picture.large} alt="rando user">
             <h2 class="user">${apiFirst} ${apiLast}</h2>
-            <p class="user">${apiLast} lives in ${apiCountry} </p>
+            <p class="user">${apiFirst} lives in ${apiCountry} </p>
             <input type="hidden" name="apiFirst" value="${apiFirst}"/>
             <input type="hidden" name="apiLast" value="${apiLast}"/>
             <input type="hidden" name="apiCountry" value="${apiCountry}"/>
